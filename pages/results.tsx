@@ -17,7 +17,7 @@ const Results:NextPage<Props> = (props) => {
         <div className="flex flex-col bg-slate-500 justify-around items-center text-center h-screen font-mono">
             <p className="font-bold text-2xl w-96">You Scored <br /> {props.correctAnswers} / 10</p>
             {
-                props.questions.map((question: Question, i:number) => {
+                props.questions?.map((question: Question, i:number) => {
                     return(
                     <div key={i} className="flex flex-row gap-5 justify-center items-center">
                         {
